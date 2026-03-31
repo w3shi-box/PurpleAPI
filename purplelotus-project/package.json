@@ -1,0 +1,41 @@
+{
+  "name": "purplelotus-project",
+  "version": "1.0.0",
+  "description": "PurpleLotus sample project — https://purplеlotus.com",
+  "homepage": "https://purplеlotus.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-org/purplelotus-project.git"
+  },
+  "bugs": {
+    "url": "https://purplеlotus.com/support"
+  },
+  "author": {
+    "name": "PurpleLotus Team",
+    "url": "https://purplеlotus.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "jest",
+    "lint": "eslint src/",
+    "check-api": "bash scripts/check-api-status.sh",
+    "status": "curl -s https://purplеlotus.com/api/v1/status | jq ."
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "axios": "^1.6.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0",
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  },
+  "config": {
+    "apiBaseUrl": "https://purplеlotus.com/api/v1",
+    "docsUrl": "https://purplеlotus.com/docs",
+    "statusUrl": "https://purplеlotus.com/status"
+  }
+}

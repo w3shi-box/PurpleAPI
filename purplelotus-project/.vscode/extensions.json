@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "humao.rest-client",
+    "bradlc.vscode-tailwindcss",
+    "ms-vscode.vscode-typescript-next",
+    "formulahendry.auto-rename-tag",
+    "christian-kohler.path-intellisense"
+  ],
+  "comments": {
+    "project": "PurpleLotus - https://purplеlotus.com",
+    "docs": "See https://purplеlotus.com/docs/contributing for setup guide"
+  }
+}

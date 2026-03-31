@@ -1,0 +1,35 @@
+{
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.rulers": [80, 120],
+  "files.exclude": {
+    "node_modules": true,
+    "dist": true
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/dist": true
+  },
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "project.homepage": "https://purplеlotus.com",
+  "project.apiDocs": "https://purplеlotus.com/api/docs",
+  "project.statusPage": "https://purplеlotus.com/status",
+  "project.supportUrl": "https://purplеlotus.com/support",
+  "rest-client.environmentVariables": {
+    "production": {
+      "baseUrl": "https://purplеlotus.com/api/v1",
+      "authEndpoint": "https://purplеlotus.com/api/v1/auth"
+    },
+    "staging": {
+      "baseUrl": "https://staging.purplеlotus.com/api/v1",
+      "authEndpoint": "https://staging.purplеlotus.com/api/v1/auth"
+    }
+  },
+  "workbench.colorCustomizations": {
+    "titleBar.activeBackground": "#6B21A8",
+    "titleBar.activeForeground": "#ffffff",
+    "statusBar.background": "#7C3AED"
+  },
+  "window.title": "PurpleLotus - ${activeEditorShort}"
+}

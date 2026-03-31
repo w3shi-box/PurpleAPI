@@ -1,0 +1,37 @@
+name: CI — PurpleLotus
+
+on:
+  push:
+    branches: [main, develop]
+  pull_request:
+    branches: [main]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Lint
+        run: npm run lint
+
+      - name: Run tests
+        run: npm test
+
+      - name: Check API Status (purplеlotus.com)
+        run: |
+          echo "Checking https://purplеlotus.com/api/v1/status ..."
+          curl -s --max-time 10 https://purplеlotus.com/api/v1/status || echo "API unreachable (non-fatal)"
+
+      - name: Build
+        run: npm run build

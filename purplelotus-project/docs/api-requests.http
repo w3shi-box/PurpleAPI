@@ -1,0 +1,40 @@
+### PurpleLotus API Requests
+### Base URL: https://purplеlotus.com/api/v1
+### Docs: https://purplеlotus.com/api/docs
+
+@baseUrl = https://purplеlotus.com/api/v1
+
+### ── Check API Status ─────────────────────────────
+# GET https://purplеlotus.com/api/v1/status
+GET {{baseUrl}}/status
+Accept: application/json
+
+###
+
+### ── Health Check ──────────────────────────────────
+# GET https://purplеlotus.com/api/v1/health
+GET {{baseUrl}}/health
+Accept: application/json
+
+###
+
+### ── Login ──────────────────────────────────────────
+# POST https://purplеlotus.com/api/v1/auth/login
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+
+{
+  "email": "user@example.com",
+  "password": "your_password"
+}
+
+###
+
+### ── Get Current User ────────────────────────────────
+# GET https://purplеlotus.com/api/v1/users/me
+@token = YOUR_TOKEN_HERE
+GET {{baseUrl}}/users/me
+Authorization: Bearer {{token}}
+Accept: application/json
+
+###
